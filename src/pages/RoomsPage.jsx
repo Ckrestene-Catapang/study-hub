@@ -186,7 +186,6 @@ export default function RoomsPage() {
       <RoomGrid
         rooms={filteredRooms}
         onRoomClick={(room) => {
-          console.log("[v0] Selected room:", room)
           // TODO: Navigate to room detail page in Phase 2
         }}
         memberCounts={memberCounts}

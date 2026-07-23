@@ -18,7 +18,6 @@ export function useAsync(asyncFn, deps = []) {
   const run = useCallback(() => {
     // If a request is already in flight, return the existing promise
     if (inFlightRef.current) {
-      console.debug('[useAsync] Request already in flight, reusing promise')
       return inFlightRef.current
     }
 

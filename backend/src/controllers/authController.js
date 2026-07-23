@@ -286,97 +286,26 @@ export async function changePassword(req, res, next) {
 
 /**
  * Request password reset
+ * DISABLED during closed beta - email service to be implemented in v1.1
  */
 export async function forgotPassword(req, res, next) {
-  try {
-    const { email } = req.body
-
-    // Find user
-    const result = await query('SELECT id FROM users WHERE email = $1', [email])
-
-    // Always return success for security (don't reveal if email exists)
-    if (result.rows.length === 0) {
-      return res.json({
-        success: true,
-        message: 'If an account exists, password reset email has been sent',
-      })
-    }
-
-    const user = result.rows[0]
-
-    // Generate reset token
-    const resetToken = generateRandomToken()
-    const tokenHash = hashToken(resetToken)
-    const expiresAt = new Date(Date.now() + 1 * 60 * 60 * 1000) // 1 hour
-
-    await query(
-      `INSERT INTO password_reset_tokens (user_id, token_hash, expires_at)
-       VALUES ($1, $2, $3)`,
-      [user.id, tokenHash, expiresAt]
-    )
-
-    // TODO: Send email with reset link
-    // For now, just return the token (in production, only send via email)
-    console.log(`[AUTH] Password reset token for ${email}: ${resetToken}`)
-
-    res.json({
-      success: true,
-      message: 'Password reset email sent',
-      // Remove in production - only for testing
-      ...(process.env.NODE_ENV === 'development' && { resetToken }),
-    })
-  } catch (error) {
-    next(error)
-  }
+  return res.status(503).json({
+    success: false,
+    message: 'Password reset is unavailable during the closed beta. Please contact the developer to reset your password.',
+    code: 'PASSWORD_RESET_UNAVAILABLE',
+  })
 }
 
 /**
  * Reset password with token
+ * DISABLED during closed beta - email service to be implemented in v1.1
  */
 export async function resetPassword(req, res, next) {
-  try {
-    const { token, password } = req.body
-
-    // Find and verify token
-    const tokenHash = hashToken(token)
-    const result = await query(
-      `SELECT user_id FROM password_reset_tokens 
-       WHERE token_hash = $1 AND expires_at > CURRENT_TIMESTAMP AND used_at IS NULL`,
-      [tokenHash]
-    )
-
-    if (result.rows.length === 0) {
-      return res.status(400).json({
-        success: false,
-        error: 'Invalid or expired reset token',
-        code: 'INVALID_TOKEN',
-      })
-    }
-
-    const { user_id } = result.rows[0]
-
-    // Hash new password
-    const passwordHash = await hashPassword(password)
-
-    // Update password
-    await query(
-      'UPDATE users SET password_hash = $2, updated_at = CURRENT_TIMESTAMP WHERE id = $1',
-      [user_id, passwordHash]
-    )
-
-    // Mark token as used
-    await query(
-      'UPDATE password_reset_tokens SET used_at = CURRENT_TIMESTAMP WHERE token_hash = $1',
-      [tokenHash]
-    )
-
-    res.json({
-      success: true,
-      message: 'Password reset successfully. Please login with your new password.',
-    })
-  } catch (error) {
-    next(error)
-  }
+  return res.status(503).json({
+    success: false,
+    message: 'Password reset is unavailable during the closed beta. Please contact the developer to reset your password.',
+    code: 'PASSWORD_RESET_UNAVAILABLE',
+  })
 }
 
 /**
