@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sub_biology",
+    "name": "Biology",
+    "description": "Cells, genetics, ecosystems and the science of life.",
+    "color": "#22c55e",
+    "icon": "Leaf",
+    "progress": 72,
+    "notesCount": 18,
+    "flashcardsCount": 96,
+    "quizzesTaken": 7,
+    "lastStudied": "2026-07-21T14:30:00Z"
+  },
+  {
+    "id": "sub_calculus",
+    "name": "Calculus",
+    "description": "Limits, derivatives, integrals and their applications.",
+    "color": "#3b82f6",
+    "icon": "Sigma",
+    "progress": 45,
+    "notesCount": 24,
+    "flashcardsCount": 120,
+    "quizzesTaken": 4,
+    "lastStudied": "2026-07-20T09:10:00Z"
+  },
+  {
+    "id": "sub_history",
+    "name": "World History",
+    "description": "Civilizations, revolutions and the modern world.",
+    "color": "#f59e0b",
+    "icon": "Landmark",
+    "progress": 88,
+    "notesCount": 31,
+    "flashcardsCount": 64,
+    "quizzesTaken": 11,
+    "lastStudied": "2026-07-22T08:05:00Z"
+  },
+  {
+    "id": "sub_chemistry",
+    "name": "Chemistry",
+    "description": "Atoms, reactions, bonding and the periodic table.",
+    "color": "#ec4899",
+    "icon": "FlaskConical",
+    "progress": 30,
+    "notesCount": 12,
+    "flashcardsCount": 80,
+    "quizzesTaken": 2,
+    "lastStudied": "2026-07-18T16:45:00Z"
+  }
+]

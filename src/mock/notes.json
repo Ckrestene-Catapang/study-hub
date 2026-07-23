@@ -1,0 +1,98 @@
+[
+  {
+    "id": "note_1",
+    "subjectId": "sub_biology",
+    "title": "Cell Structure & Organelles",
+    "content": "The cell is the basic structural unit of all living organisms. Eukaryotic cells contain membrane-bound organelles like mitochondria, endoplasmic reticulum, and the nucleus. Prokaryotic cells lack these structures.",
+    "excerpt": "The cell is the basic structural unit of all living organisms...",
+    "tags": ["cells", "organelles", "biology"],
+    "folder": "Chapter 1",
+    "isFavorite": true,
+    "createdAt": "2026-07-15T10:00:00Z",
+    "updatedAt": "2026-07-21T14:30:00Z"
+  },
+  {
+    "id": "note_2",
+    "subjectId": "sub_calculus",
+    "title": "Chain Rule Explained",
+    "content": "The chain rule is used to differentiate composite functions. If y = f(g(x)), then dy/dx = f'(g(x)) * g'(x). This is fundamental for solving complex derivative problems.",
+    "excerpt": "The chain rule is used to differentiate composite functions...",
+    "tags": ["derivatives", "rules", "calculus"],
+    "folder": "Chapter 3",
+    "isFavorite": false,
+    "createdAt": "2026-07-18T11:20:00Z",
+    "updatedAt": "2026-07-20T09:10:00Z"
+  },
+  {
+    "id": "note_3",
+    "subjectId": "sub_history",
+    "title": "Causes of the French Revolution",
+    "content": "Economic hardship, social inequality, and Enlightenment ideas sparked the French Revolution. The ancien régime's financial crisis, combined with famine and Enlightenment philosophy, created perfect conditions for revolution.",
+    "excerpt": "Economic hardship, social inequality and Enlightenment ideas...",
+    "tags": ["revolution", "europe", "france"],
+    "folder": "Chapter 2",
+    "isFavorite": true,
+    "createdAt": "2026-07-10T15:45:00Z",
+    "updatedAt": "2026-07-22T08:05:00Z"
+  },
+  {
+    "id": "note_4",
+    "subjectId": "sub_biology",
+    "title": "Photosynthesis Process",
+    "content": "Photosynthesis converts light energy into chemical energy through the light-dependent and light-independent reactions. Chloroplasts contain chlorophyll which captures light energy.",
+    "excerpt": "Photosynthesis converts light energy into chemical energy through reactions...",
+    "tags": ["photosynthesis", "energy", "plants"],
+    "folder": "Chapter 1",
+    "isFavorite": false,
+    "createdAt": "2026-07-12T09:30:00Z",
+    "updatedAt": "2026-07-19T13:15:00Z"
+  },
+  {
+    "id": "note_5",
+    "subjectId": "sub_chemistry",
+    "title": "Chemical Bonding Types",
+    "content": "There are three main types of chemical bonds: ionic (between metals and nonmetals), covalent (between nonmetals), and metallic (between metals). Each has distinct properties.",
+    "excerpt": "Three main types of chemical bonds: ionic, covalent, and metallic...",
+    "tags": ["bonds", "chemistry", "atoms"],
+    "folder": "Chapter 1",
+    "isFavorite": true,
+    "createdAt": "2026-07-08T14:00:00Z",
+    "updatedAt": "2026-07-21T10:45:00Z"
+  },
+  {
+    "id": "note_6",
+    "subjectId": "sub_calculus",
+    "title": "Integration by Parts",
+    "content": "Integration by parts uses the formula: ∫u dv = uv - ∫v du. This technique helps integrate products of functions. Proper choice of u and dv is crucial.",
+    "excerpt": "Integration by parts formula and techniques for solving complex integrals...",
+    "tags": ["integration", "calculus"],
+    "folder": "Chapter 4",
+    "isFavorite": false,
+    "createdAt": "2026-07-05T16:20:00Z",
+    "updatedAt": "2026-07-18T11:05:00Z"
+  },
+  {
+    "id": "note_7",
+    "subjectId": "sub_history",
+    "title": "Industrial Revolution Timeline",
+    "content": "The Industrial Revolution (1760-1840) began in Britain with mechanization of textile production. It spread globally, transforming economies, societies, and technology.",
+    "excerpt": "The Industrial Revolution transformed economies and societies globally...",
+    "tags": ["industrial", "revolution", "timeline"],
+    "folder": "Chapter 3",
+    "isFavorite": false,
+    "createdAt": "2026-07-09T12:30:00Z",
+    "updatedAt": "2026-07-20T14:20:00Z"
+  },
+  {
+    "id": "note_8",
+    "subjectId": "sub_chemistry",
+    "title": "Periodic Table Organization",
+    "content": "Elements are organized by atomic number and electron configuration. Periods are rows, groups are columns. Similar properties appear in the same group.",
+    "excerpt": "Elements organized by atomic number and electron configuration...",
+    "tags": ["periodic", "elements", "organization"],
+    "folder": "Reference",
+    "isFavorite": true,
+    "createdAt": "2026-07-06T10:15:00Z",
+    "updatedAt": "2026-07-17T15:50:00Z"
+  }
+]

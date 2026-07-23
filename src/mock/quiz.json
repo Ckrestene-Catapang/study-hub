@@ -1,0 +1,29 @@
+[
+  {
+    "id": "quiz_bio_1",
+    "subjectId": "sub_biology",
+    "title": "Cell Biology Basics",
+    "questionCount": 3,
+    "durationMinutes": 10,
+    "questions": [
+      {
+        "id": "q1",
+        "prompt": "Which organelle is responsible for protein synthesis?",
+        "options": ["Ribosome", "Golgi apparatus", "Lysosome", "Vacuole"],
+        "correctIndex": 0
+      },
+      {
+        "id": "q2",
+        "prompt": "The cell membrane is primarily composed of…",
+        "options": ["Cellulose", "Phospholipids", "Chitin", "Keratin"],
+        "correctIndex": 1
+      },
+      {
+        "id": "q3",
+        "prompt": "DNA is stored in which part of a eukaryotic cell?",
+        "options": ["Cytoplasm", "Nucleus", "Mitochondria", "Ribosome"],
+        "correctIndex": 1
+      }
+    ]
+  }
+]

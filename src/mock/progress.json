@@ -1,0 +1,21 @@
+{
+  "streakDays": 12,
+  "studyMinutesThisWeek": 340,
+  "cardsMastered": 218,
+  "quizzesCompleted": 24,
+  "weekly": [
+    { "day": "Mon", "minutes": 45 },
+    { "day": "Tue", "minutes": 60 },
+    { "day": "Wed", "minutes": 30 },
+    { "day": "Thu", "minutes": 75 },
+    { "day": "Fri", "minutes": 50 },
+    { "day": "Sat", "minutes": 20 },
+    { "day": "Sun", "minutes": 60 }
+  ],
+  "bySubject": [
+    { "subjectId": "sub_biology", "name": "Biology", "mastery": 72 },
+    { "subjectId": "sub_calculus", "name": "Calculus", "mastery": 45 },
+    { "subjectId": "sub_history", "name": "World History", "mastery": 88 },
+    { "subjectId": "sub_chemistry", "name": "Chemistry", "mastery": 30 }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "msg_1",
+    "role": "assistant",
+    "content": "Hi! I'm your AI study tutor. Ask me to explain a concept, quiz you, or summarize your notes.",
+    "createdAt": "2026-07-22T08:00:00Z"
+  },
+  {
+    "id": "msg_2",
+    "role": "user",
+    "content": "Can you explain the chain rule simply?",
+    "createdAt": "2026-07-22T08:01:00Z"
+  },
+  {
+    "id": "msg_3",
+    "role": "assistant",
+    "content": "Sure! The chain rule helps you differentiate a function inside another function. Differentiate the outer function, keep the inner one, then multiply by the derivative of the inner function.",
+    "createdAt": "2026-07-22T08:01:20Z"
+  }
+]

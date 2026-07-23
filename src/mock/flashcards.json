@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fc_1",
+    "subjectId": "sub_biology",
+    "front": "What is the powerhouse of the cell?",
+    "back": "The mitochondria — it generates most of the cell's ATP.",
+    "difficulty": "easy",
+    "mastered": true
+  },
+  {
+    "id": "fc_2",
+    "subjectId": "sub_biology",
+    "front": "What process do plants use to convert light into energy?",
+    "back": "Photosynthesis, occurring in the chloroplasts.",
+    "difficulty": "easy",
+    "mastered": false
+  },
+  {
+    "id": "fc_3",
+    "subjectId": "sub_calculus",
+    "front": "What is the derivative of sin(x)?",
+    "back": "cos(x)",
+    "difficulty": "medium",
+    "mastered": false
+  },
+  {
+    "id": "fc_4",
+    "subjectId": "sub_calculus",
+    "front": "State the power rule.",
+    "back": "d/dx[x^n] = n · x^(n-1)",
+    "difficulty": "medium",
+    "mastered": true
+  }
+]
