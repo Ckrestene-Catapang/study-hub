@@ -5,17 +5,22 @@ import { body, validationResult } from 'express-validator'
  */
 export function handleValidationErrors(req, res, next) {
   const errors = validationResult(req)
+
+  console.log("🔥 BODY RECEIVED:", req.body)
+  console.log("🔥 VALIDATION ERRORS:", errors.array())
+
   if (!errors.isEmpty()) {
     return res.status(400).json({
       success: false,
       error: 'Validation failed',
       code: 'VALIDATION_ERROR',
       errors: errors.array().map(err => ({
-        field: err.param,
+        field: err.path,
         message: err.msg,
       })),
     })
   }
+
   next()
 }
 
