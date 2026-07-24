@@ -17,13 +17,17 @@ const PORT = process.env.PORT || 5000
 /**
  * Middleware
  */
+// Debug requests
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.originalUrl}`)
+  console.log("Origin:", req.headers.origin)
+  next()
+})
+
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: true,
   credentials: true,
 }))
-app.use(express.json({ limit: '10mb' }))
-app.use(express.urlencoded({ limit: '10mb', extended: true }))
-
 /**
  * Health check endpoint
  */
