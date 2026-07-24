@@ -56,6 +56,9 @@ export const ERROR_STATUS = {
   SERVICE_UNAVAILABLE: 503,
 }
 
+
+
+
 /**
  * Custom AppError class
  */
@@ -104,6 +107,18 @@ export function logError(error, context = '') {
   }
 }
 
+
+export function handleError(error, res) {
+  logError(error)
+
+  if (error instanceof AppError) {
+    return res.status(error.statusCode).json(formatErrorResponse(error))
+  }
+
+  return res.status(500).json(formatErrorResponse(error))
+}
+
+
 /**
  * Handle validation errors from express-validator
  */
@@ -138,6 +153,8 @@ export default {
   ERROR_STATUS,
   formatErrorResponse,
   logError,
+  handleError,
   handleValidationErrors,
   successResponse,
 }
+
