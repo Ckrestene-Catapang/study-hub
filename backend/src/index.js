@@ -15,19 +15,33 @@ const app = express()
 const PORT = process.env.PORT || 5000
 
 /**
- * Middleware
+ * Global Middleware
  */
-// Debug requests
+// 1. Debug request logger
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.originalUrl}`)
   console.log("Origin:", req.headers.origin)
   next()
 })
 
+// 2. CORS configuration
 app.use(cors({
   origin: true,
   credentials: true,
 }))
+
+// 3. Request body parsers (MUST be placed BEFORE routes)
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+// 4. Debug body logger (Optional: logs parsed body to Railway logs)
+app.use((req, res, next) => {
+  if (['POST', 'PUT', 'PATCH'].includes(req.method)) {
+    console.log("🔥 BODY RECEIVED:", req.body)
+  }
+  next()
+})
+
 /**
  * Health check endpoint
  */
